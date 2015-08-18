@@ -26,6 +26,7 @@ window.onYouTubePlayerAPIReady = function () {
   }
 
   for ( var i = 0, j = nodesYouTubePlayer.length; i < j; i++ ) {
+    // Ensure that all your YouTube embeds have IDs
     objectsYouTubePlayer[i] = new YT.Player( nodesYouTubePlayer[i].id, {
       events: {
         'onStateChange': onYouTubeVideoStateChange

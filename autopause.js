@@ -11,7 +11,9 @@ window.onYouTubePlayerAPIReady = function () {
   'use strict'
   
   var YT = window.YT
-
+  
+  // Requires the 'enablejsapi=1' flag of the querystring of the embeds.
+  // Get your backend to add them or write a script that would add it for you...
   var nodesYouTubePlayer = document.querySelectorAll( 'iframe[src*=youtube.com/embed]' )
   var objectsYouTubePlayer = []
 
